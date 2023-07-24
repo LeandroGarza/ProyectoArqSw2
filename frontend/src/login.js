@@ -27,7 +27,7 @@ const Login = () => {
 
   const login = async()=>{
       fetch('http://localhost:9000/login',requestOptions)
-      .then(response => {if (response.status == 403) {
+      .then(response => {if (response.status === 403 || response.status === 400) {
          swal.fire({
           text: "Datos incorrectos",
           icon: 'error',
@@ -37,7 +37,7 @@ const Login = () => {
               return response.json()
           }})
       }
-      if(response.status==200){
+      if(response.status === 200){
         swal.fire({icon: 'success'}
         ).then((result) => {
           if (result.isConfirmed) {
