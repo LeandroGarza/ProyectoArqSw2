@@ -86,3 +86,18 @@ http://localhost:8090/items
 El Frontend debia contener la vista de inicio con el input de búsqueda, el listado de Items, el detalle de la publicación.
 En la implementacion, el frontend simplemente se comunica con el servicio BÚSQUEDA a traves del request http - GET Query - que se especifico anteriormente,
 obtiene la informacion de los items y la muestra, cargando tambien las imagenes correspondientes
+
+
+
+
+
+Uso general del proyecto:
+
+Debemos correr el siguiente comando en la carpeta frontend
+- npm install
+- npm start
+
+Luego debemos correr los servicios de memcached, solr, mongo y rabbit en docker
+
+Finalmente los 4 servicios (users, messages, items, search) deben ser corridos en consola:
+- go run main.go
