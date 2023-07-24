@@ -69,6 +69,7 @@ http://localhost:8090/items
     "address": "obispo trejo"
   },
   {
+  
     "title": "Departamento amoblado",
     "userid": 3,
     "image": "asjdkb",
